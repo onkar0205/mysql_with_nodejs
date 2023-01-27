@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body onload="getdata()">
+    <!-- <button><a href="/index.html">Log out</a></button>
+    <form name="myForm" onsubmit="PersonalhandleSubmit(event)">
+        Name: <input type="text" id="Name" value="" name="name"><br>
+        email: <input type="text" id="Email" value="" name="email"><br>
+        jobtype: <input type="text" id="jobType" value="" name="jobtype"><br>
+        <input type="submit" value="Update">
+    </form>
+    <p id="invalid"></p> -->
+    <div class="headingsContainer">
+        <h3>My Details</h3>
+    </div>
+    <div class="mainContainer">
+        <form name="myForm" onsubmit="PersonalhandleSubmit(event)">
+            Name:<input type="text" placeholder="Enter name" id="Name" value="" required>
+            <br><br>
+            email:<input type="text" placeholder="Enter Email" id="Email" value="" required>
+            <br><br>
+            jobtype:<input type="text" placeholder="Enter Jobtitle" id="jobType" value="" required>
+            <button type="submit">Update</button>
+            <!-- <p class="register">Not Register? <a href="/register.html">Register here!</a></p> -->
+        </form>
+    </div>
+    <div id="logout"><a href="/index.html"><button>Log out</button></a></div>
+
+</body>
+
+</html>

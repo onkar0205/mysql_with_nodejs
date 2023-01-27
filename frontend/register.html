@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <!-- <p id="result"></p>
+    <button><a href="/index.html">Log in</a></button>
+    <form name="myForm" onsubmit="registerhandleSubmit(event)">
+        UserName: <input type="text" id="UserName" value="" name="inUsername"><br>
+        Password: <input type="text" id="Password" value="" name="inPassward"><br>
+        <input type="submit" value="Sign in">
+    </form> -->
+
+    <div class="headingsContainer">
+        <h3>New Register</h3>
+        <p>Register with username and password</p>
+    </div>
+    <div class="mainContainer">
+        <form name="myForm" onsubmit="registerhandleSubmit(event)">
+            <p id="result"></p>
+            <label for=" username">Username</label>
+            <input type="text" placeholder="username" id="UserName" required>
+            <br><br>
+            <label for="pswrd">Password</label>
+            <input type="password" placeholder="password" id="Password" required>
+            <input type="submit" value="Sign in">
+            <!-- <button type="submit"><a href="/employee_detail.html">Sign in</a></button> -->
+            <p class="register">Already Login?<a href="/index.html">Login</a></p>
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>

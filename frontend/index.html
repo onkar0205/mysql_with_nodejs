@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="/index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- <button><a href="/register.html">Sign in</a></button>
+    <form name="myForm" onsubmit="loginhandleSubmit(event)">
+        UserName: <input type="text" id="UserName" value="" name="inUsername"><br>
+        Password: <input type="text" id="Password" value="" name="inPassward"><br>
+        <input type="submit" value="Log in">
+    </form> -->
+    <div class="headingsContainer">
+        <h3>Login in</h3>
+        <p>Sign in with your username and password</p>
+    </div>
+    <div class="mainContainer">
+        <form name="myForm" onsubmit="loginhandleSubmit(event) ">
+            Your username :<input type="text" id="UserName" value="" name="inUsername">
+            <br><br>
+            Your password :<input type="text" id="Password" value="" name="inPassward">
+            <input type="submit" value="Log in">
+            <p id="invalid"></p>
+            <p class="register">Not Register? <a href="/register.html">Register here!</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
